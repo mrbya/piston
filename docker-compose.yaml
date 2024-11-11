@@ -12,3 +12,5 @@ services:
             - ./data/piston/packages:/piston/packages
         tmpfs:
             - /tmp:exec
+        environment:
+            - PISTON_OUTPUT_MAX_SIZE=1048576
